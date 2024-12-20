@@ -1,5 +1,5 @@
 # Ex09 Event Registration Web Application
-# Date:09.12.2024
+# Date:15.12.2024
 # AIM:
 To design, develop and deploy a web application for event registration.
 
@@ -30,63 +30,253 @@ Figma
 
 # CODE:
 ```
-<div style="width: 360px; height: 640px; position: relative; background: #C709CB">
-  <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
-  <div style="width: 257px; height: 62px; left: 51px; top: 488px; position: absolute; background: rgba(193.88, 214.82, 214.82, 0.82); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset; border: 1px black solid"></div>
-  <div style="width: 160px; height: 45px; left: 100px; top: 474px; position: absolute; text-align: center; color: #070707; font-size: 35px; font-family: Inknut Antiqua; font-weight: 400; word-wrap: break-word">LOG IN</div>
-  <div style="width: 209px; height: 39px; left: 128px; top: 250px; position: absolute; background: rgba(62.67, 49.88, 49.88, 0.56)"></div>
-  <div style="width: 135px; height: 39px; left: 132px; top: 252px; position: absolute; text-align: center; color: white; font-size: 14px; font-family: Inknut Antiqua; font-weight: 400; word-wrap: break-word">ENTER NAME </div>
-  <div style="width: 187px; height: 43px; left: -29px; top: 248px; position: absolute; text-align: center; color: white; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">NAME : </div>
-  <div style="width: 128px; height: 43px; left: 0px; top: 329px; position: absolute; text-align: center; color: white; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">REF NO :</div>
-  <div style="width: 198px; height: 41px; left: 134px; top: 330px; position: absolute; background: rgba(63, 50, 50, 0.67)"></div>
-  <div style="width: 160px; height: 38px; left: 134px; top: 338px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">ENTER  REF-NO</div>
-  <div style="width: 198px; height: 36px; left: 134px; top: 408px; position: absolute; background: rgba(63, 50, 50, 0.56)"></div>
-```
+<div style="width: 100%; height: 100%; position: relative; background: #C7358D">
+    <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
+    <img style="width: 336px; height: 50px; left: 24px; top: 29px; position: absolute" src="https://via.placeholder.com/336x50" />
+    <img style="width: 205px; height: 202px; left: 75px; top: 101px; position: absolute" src="https://via.placeholder.com/205x202" />
+    <div style="left: 43px; top: 320px; position: absolute; color: black; font-size: 48px; font-family: Kaushan Script; font-weight: 400; word-wrap: break-word">FIFA FEST</div>
+    <div style="width: 184px; height: 54px; left: 73px; top: 501px; position: absolute; background: rgba(236.92, 229.46, 50.35, 0.97)"></div>
+    <div style="left: 106px; top: 508px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">LOGIN</div>
+    <div style="width: 188px; height: 51px; left: 71px; top: 571px; position: absolute; background: #D8D00D"></div>
+    <div style="left: 87px; top: 583px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">REGISTER</div>
+</div>
 
-```
-<div style="width: 360px; height: 640px; position: relative; background: white">
-  <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
-  <div style="width: 170px; height: 36px; left: 95px; top: 320px; position: absolute; text-align: center; color: black; font-size: 27px; font-family: Joti One; font-weight: 400; word-wrap: break-word">FLASH MOB</div>
-  <img style="width: 247px; height: 80px; left: 47px; top: 94px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)" src="https://via.placeholder.com/247x80" />
-  <img style="width: 346px; height: 52px; left: 7px; top: 24px; position: absolute" src="https://via.placeholder.com/346x52" />
-  <div style="width: 220px; height: 44px; left: -40px; top: 215px; position: absolute; text-align: center; color: black; font-size: 25px; font-family: Itim; font-weight: 400; word-wrap: break-word">EVENTS :</div>
-  <div style="width: 37px; height: 108px; left: 47px; top: 215px; position: absolute; text-align: center; color: black; font-size: 79px; font-family: Itim; font-weight: 400; word-wrap: break-word">.</div>
-  <div style="width: 46px; height: 109px; left: 42px; top: 263px; position: absolute; text-align: center; color: black; font-size: 79px; font-family: Itim; font-weight: 400; word-wrap: break-word">.</div>
-  <div style="width: 46px; height: 109px; left: 43px; top: 323px; position: absolute; text-align: center; color: black; font-size: 79px; font-family: Itim; font-weight: 400; word-wrap: break-word">.</div>
-  <div style="width: 36px; height: 137px; left: 47px; top: 386px; position: absolute; text-align: center; color: black; font-size: 79px; font-family: Itim; font-weight: 400; word-wrap: break-word">.</div>
-  <div style="width: 46px; height: 109px; left: 42px; top: 445px; position: absolute; text-align: center; color: black; font-size: 79px; font-family: Itim; font-weight: 400; word-wrap: break-word">.</div>
-  <div style="width: 46px; height: 109px; left: 42px; top: 493px; position: absolute; text-align: center; color: black; font-size: 79px; font-family: Itim; font-weight: 400; word-wrap: break-word">.</div>
-  <div style="width: 187px; height: 45px; left: 84px; top: 435px; position: absolute; text-align: center; color: black; font-size: 27px; font-family: Joti One; font-weight: 400; word-wrap: break-word">PS-5 & PS-4</div>
-  <div style="width: 198px; height: 46px; left: 70px; top: 493px; position: absolute; text-align: center; color: black; font-size: 27px; font-family: Joti One; font-weight: 400; word-wrap: break-word">DJ-PARTY</div>
-  <div style="width: 201px; height: 29px; left: 88px; top: 263px; position: absolute; text-align: center; color: black; font-size: 27px; font-family: Joti One; font-weight: 400; word-wrap: break-word">DIGITAL ART</div>
-  <div style="width: 199px; height: 48px; left: 71px; top: 548px; position: absolute; text-align: center; color: black; font-size: 27px; font-family: Joti One; font-weight: 400; word-wrap: break-word">DRAWING</div>
-  <div style="width: 190px; height: 36px; left: 104px; top: 378px; position: absolute; text-align: center; color: black; font-size: 27px; font-family: Joti One; font-weight: 400; word-wrap: break-word">PHOTOGRAPHY</div>
+// FIFA FEST
+color: black;
+ font-size: 48px;
+ font-family: Kaushan Script;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// LOGIN
+color: black;
+ font-size: 32px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// REGISTER
+color: black;
+ font-size: 32px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+
+Page 2:
+
+<div style="width: 100%; height: 100%; position: relative; background: #30E0E0">
+   <div style="width: 190px; height: 41px; left: 68px; top: 378px; position: absolute; background: #D9D9D9"></div>
+   <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
+   <div style="width: 218px; height: 67px; left: 32px; top: 10px; position: absolute; background: #E4F14D"></div>
+   <div style="width: 240px; height: 68px; left: 45px; top: 24px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">CATEGORIES</div>
+   <div style="width: 25px; height: 6px; left: 88px; top: 37px; position: absolute"></div>
+   <div style="width: 282px; height: 44px; left: 32px; top: 265px; position: absolute; background: #E4F14D"></div>
+   <div style="left: 78px; top: 270px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">*JUNIOR(5)</div>
+   <div style="width: 278px; height: 38px; left: 32px; top: 359px; position: absolute; background: #E4F14D"></div>
+   <div style="left: 78px; top: 360px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">*SENIOR(7)</div>
+   <div style="width: 328px; height: 39px; left: 32px; top: 449px; position: absolute; background: #E4F14D"></div>
+   <div style="width: 276.99px; height: 39.08px; left: 63.01px; top: 448.92px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">*SUPER SENIOR</div>
+   <div style="width: 152px; height: 61px; left: 28px; top: 190px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 32px; top: 191px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">SELECT:</div>
 </div>
-```
-```
-<div style="width: 360px; height: 640px; position: relative; background: white">
-  <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
-  <img style="width: 346px; height: 52px; left: 7px; top: 26px; position: absolute" src="https://via.placeholder.com/346x52" />
-  <img style="width: 199.37px; height: 140px; left: 7px; top: 109px; position: absolute" src="https://via.placeholder.com/199x140" />
-  <img style="width: 199px; height: 140px; left: 154px; top: 272px; position: absolute" src="https://via.placeholder.com/199x140" />
-  <img style="width: 199px; height: 170px; left: 7px; top: 435px; position: absolute" src="https://via.placeholder.com/199x170" />
+
+// CATEGORIES
+color: black;
+font-size: 32px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// *JUNIOR(5)
+color: black;
+font-size: 32px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// *SENIOR(7)
+color: black;
+font-size: 32px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// *SUPER SENIOR
+color: black;
+font-size: 32px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// SELECT:
+color: black;
+font-size: 32px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+
+Page 3:
+
+<div style="width: 100%; height: 100%; position: relative; background: white">
+   <img style="width: 342px; height: 648px; left: -17px; top: -21px; position: absolute" src="https://via.placeholder.com/342x648" />
+   <div style="width: 257px; height: 52px; left: 27px; top: 81px; position: absolute; background: #D8D00D"></div>
+   <div style="width: 213px; height: 47px; left: 49px; top: 88px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">REGISTRATION FORM</div>
+   <div style="width: 202px; height: 22px; left: 53px; top: 141px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 72px; top: 144px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">YOUR DETAILS HERE</div>
+   <div style="width: 211px; height: 32px; left: 51px; top: 210px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 113px; top: 217px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">NAME :</div>
+   <div style="width: 196px; height: 28px; left: 59px; top: 269px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 113px; top: 277px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">GENDER :</div>
+   <div style="width: 201px; height: 31px; left: 59px; top: 324px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 118px; top: 330px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">DOB</div>
+   <div style="width: 201px; height: 31px; left: 61px; top: 382px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 109px; top: 385px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">MOBILE NO :</div>
+   <div style="width: 200px; height: 38px; left: 61px; top: 440px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 113px; top: 449px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">EMAIL ID :</div>
+   <div style="left: 154px; top: 329px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">/AGE :</div>
+   <div style="width: 194px; height: 35px; left: 66px; top: 496px; position: absolute; background: #D9D9D9"></div>
+   <div style="left: 88px; top: 504px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">EVENT CATEGORY :</div>
+   <div style="width: 190px; height: 55px; left: 70px; top: 549px; position: absolute; background: rgba(236.92, 229.46, 50.35, 0.97)"></div>
+   <div style="left: 88px; top: 561px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">REGISTER</div>
 </div>
-```
-```
-<div style="width: 360px; height: 640px; position: relative; background: #7D3535">
-  <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
-  <img style="width: 346px; height: 52px; left: 7px; top: 24px; position: absolute" src="https://via.placeholder.com/346x52" />
-  <img style="width: 352px; height: 171px; left: -10px; top: 164px; position: absolute" src="https://via.placeholder.com/352x171" />
-  <img style="width: 247px; height: 80px; left: 42px; top: 102px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)" src="https://via.placeholder.com/247x80" />
-  <div style="width: 267px; height: 79px; left: 42px; top: 320px; position: absolute; text-align: center"><span style="color: #0444E7; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">We Are </span><span style="color: white; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">Waiting For Your </span><span style="color: #3F082F; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">Arrival.</span></div>
-  <div style="width: 254px; height: 64px; left: 55px; top: 416px; position: absolute; text-align: center"><span style="color: white; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">Don’t </span><span style="color: #D6F324; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">Miss OUT </span><span style="color: white; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">the<br/></span><span style="color: #E40E27; font-size: 29px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">“CARNIVAL”</span></div>
-  <div style="width: 172px; height: 34px; left: -6px; top: 504px; position: absolute; text-align: center; color: #0B0B0B; font-size: 29px; font-family: Calistoga; font-weight: 400; word-wrap: break-word">Contact us :</div>
-  <div style="width: 250px; left: 42px; top: 538px; position: absolute; text-align: center"><span style="color: white; font-size: 24px; font-family: Calistoga; font-weight: 400; word-wrap: break-word">phone</span><span style="color: white; font-size: 20px; font-family: Calistoga; font-weight: 400; word-wrap: break-word"> :8122593522</span></div>
-  <div style="width: 256px; height: 33px; left: 67px; top: 578px; position: absolute; text-align: center"><span style="color: white; font-size: 20px; font-family: Calistoga; font-weight: 400; word-wrap: break-word">E-mail :</span><span style="color: white; font-size: 15px; font-family: Calistoga; font-weight: 400; word-wrap: break-word"> celenza2k24@gmail.com</span></div>
+
+// REGISTRATION FORM
+color: black;
+font-size: 20px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// YOUR DETAILS HERE
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// NAME :
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// GENDER :
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// DOB
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// MOBILE NO :
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// EMAIL ID :
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// /AGE :
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// EVENT CATEGORY :
+color: black;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+---
+// REGISTER
+color: black;
+font-size: 32px;
+font-family: Inter;
+font-style: italic;
+font-weight: 800;
+word-wrap: break-word
+
+page 4:
+
+ <div style="width: 100%; height: 100%; position: relative; background: white">
+    <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
+    <div style="width: 221px; height: 58px; left: 82px; top: 267px; position: absolute; background: #D9D9D9"></div>
+    <div style="left: 96px; top: 281px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">THANK YOU</div>
+    <div style="width: 276px; height: 103px; left: 36px; top: 383px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 230px; left: 51px; top: 399px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">EAGERLY WAITING FOR YOU PARTICIPATION GUYS</div>
+    <div style="width: 313px; height: 43px; left: 47px; top: 532px; position: absolute; background: #D9D9D9"></div>
+    <div style="left: 51px; top: 542px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">MAIL-kd032006@gmail.com</div>
+    <div style="width: 266px; height: 48px; left: 60px; top: 587px; position: absolute; background: #D9D9D9"></div>
+    <div style="left: 85px; top: 587px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-style: italic; font-weight: 800; word-wrap: break-word">contact : 9042254678<br/>phone : 9443628879</div>
+    <img style="width: 336px; height: 50px; left: 24px; top: 10px; position: absolute" src="https://via.placeholder.com/336x50" />
 </div>
+
+// THANK YOU
+color: black;
+ font-size: 32px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// EAGERLY WAITING FOR YOU PARTICIPATION GUYS
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// mail
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// contact : 9952059791<br/>phone : 9952059791
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 800;
+ word-wrap: break-word
 ```
 # OUTPUT:
-![image](https://github.com/user-attachments/assets/aefb6d63-177f-4832-804e-c0f6ac64902f)
+![fig](https://github.com/user-attachments/assets/498df1d5-7de1-464a-95d0-b45090380f36)
+
 
 # RESULT:
 The program to design, develop and deploy a web application for event registration is completed successfully.
